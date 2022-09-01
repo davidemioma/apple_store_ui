@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-body text-[#232428];
+  }
+}
+
+@layer components {
+  .nav_link {
+    @apply cursor-pointer capitalize tracking-wide opacity-75 hover:opacity-100;
+  }
+
+  .gradient {
+    @apply bg-gradient-to-r from-pink-500 to-violet-500 text-white;
+  }
+
+  .btn {
+    @apply py-3 font-semibold tracking-wide md:text-lg;
+  }
+
+  .view {
+    @apply relative whitespace-nowrap py-2.5 px-4 sm:py-4 sm:px-6;
+  }
+
+  .active_view {
+    @apply rounded-t-xl bg-[#35383c];
+  }
+
+  .card {
+    @apply flex flex-col items-center rounded-xl bg-gray-200 p-8;
+  }
+
+  .cardBtn {
+    @apply gradient flex w-full items-center justify-center space-x-2 rounded py-2.5;
+  }
+}
